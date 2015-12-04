@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-#Provides the directory to running fastqc program
+#Provides the directory to run the fastqc program
 my $fastqc = '/usr/local/fastqc/fastqc';
 
 #Next set of lines asks for the directory containing the fastq files and where the fastqc output files will be placed.
