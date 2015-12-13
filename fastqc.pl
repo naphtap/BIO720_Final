@@ -19,7 +19,7 @@ chdir $fastq_file_dir;
 my @files = glob "$fastq_file_dir/*.fastq";
 print @files;
 
-#Runs the fastqc command on all the fastq files stored within the files array.
+#Runs the fastqc command on all the fastq files stored within the array.
 for my $sample (@files) {
   my $fastq = "$sample";
   print "$fastq\n";
