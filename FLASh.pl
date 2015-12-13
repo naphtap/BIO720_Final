@@ -24,7 +24,7 @@ print "Now provide the output directory for your merged fastq reads: ";
 my $out_dir = <STDIN>;
 chomp $out_dir;
 
-#Creates and array of fastq files and then clumps them into hash pairs based on their file names.
+#Creates an array of fastq files and then clumps them into hash pairs based on their file names.
 my @files = glob "$fastq_file_dir/*.fastq";
 
 my %pairs;
@@ -42,7 +42,7 @@ printf "Now Processing %d pairs of FASTQ files\n\n", scalar keys %pairs;
 #Changes directory to that containing the pair-ended reads
 chdir $fastq_file_dir;
 
-#Calls on the pars based on their filename and runs FLASh to merge the pair-ended reads.
+#Calls on the pairs based on their filename and runs FLASh to merge the pair-ended reads.
 for my $sample ( sort keys %pairs ) {
 
     my $pair = $pairs{$sample};
