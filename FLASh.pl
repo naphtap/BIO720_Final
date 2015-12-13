@@ -24,7 +24,7 @@ print "Now provide the output directory for your merged fastq reads: ";
 my $out_dir = <STDIN>;
 chomp $out_dir;
 
-#Creates an array of fastq files and then clumps them into hash pairs based on their file names.
+#Creates an array of fastq files and clumps them into pair hases based on their file names.
 my @files = glob "$fastq_file_dir/*.fastq";
 
 my %pairs;
