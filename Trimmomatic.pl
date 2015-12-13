@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-#Provides directory to run Trimmomatic
+#Provides directory to run Trimmomatic 0.33
 my $trimmomatic = '/usr/local/trimmomatic/trimmomatic-0.33.jar';
 
 #Next set of lines asks the user to provide the parameters for running Trimmomatic
